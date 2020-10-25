@@ -9,6 +9,7 @@ class branch{
 		}
 	}
 }
+print("hey");
 angle = 0;
 timer = 0;
 fps = 0;
