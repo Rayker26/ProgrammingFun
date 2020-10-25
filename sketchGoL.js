@@ -88,7 +88,7 @@ function setup()
 {
 	time = 0;
 	speed = 1;
-	pause = false;
+	pause = true;
 	button = createButton('Pause');
   	button.position(19, 19);
   	button.mousePressed(setPause);
