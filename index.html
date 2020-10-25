@@ -9,8 +9,22 @@
 </head>
 
 <body>
-	<script src="sketchGoL.js"></script>
-	<script src="sketchTree.js"></script>
+	<script type="text/javascript">
+		function changeProject(projekt) {
+		  var src;
+		  switch(projekt) {
+			case "Tree":
+			src = "sketchTree.js.js";
+			break;
+			case "GoL":
+			default:
+			src = "sketchGoL.js";
+		  }
+		 //document.getElementById("script").src = src;
+		}
+		</script>
+	<!--<script src="sketchGoL.js"></script>
+	<script src="sketchTree.js"></script>-->
 </body>
 
 </html>
