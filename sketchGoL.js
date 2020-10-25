@@ -109,10 +109,13 @@ function setPause(){
 	}
 }
 function mousePressed() {
-	if(grid[floor(mouseX/res)][floor(mouseY/res)].life==0){
-		grid[floor(mouseX/res)][floor(mouseY/res)].life = 1;
-	}else{
-		grid[floor(mouseX/res)][floor(mouseY/res)].life = 0;
+	if(mouseX<cx&&mouseY<cy&&mouseX>0&&mouseY>0){
+		
+		if(grid[floor(mouseX/res)][floor(mouseY/res)].life==0){
+			grid[floor(mouseX/res)][floor(mouseY/res)].life = 1;
+		}else{
+			grid[floor(mouseX/res)][floor(mouseY/res)].life = 0;
+		}
 	}
   }
 function draw()
@@ -148,13 +151,5 @@ function draw()
 			time = 0;
 		}
 	}
-	if(mouseX<cx&&mouseY<cy&&mouseX>0&&mouseY>0){
-		console.clear();
-		print(floor(mouseX/res));
-		print(floor(mouseY/res));
-		print("life: "+grid[floor(mouseX/res)][floor(mouseY/res)].life);
-		print("nt: "+grid[floor(mouseX/res)][floor(mouseY/res)].nt);
-		print("surr: "+grid[floor(mouseX/res)][floor(mouseY/res)].surr);
-
-	}
+	
 }
